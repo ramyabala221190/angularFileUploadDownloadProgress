@@ -1,0 +1,21 @@
+.container{
+    width:50%;
+  
+   .progress-message{
+    white-space: nowrap;
+    margin:auto;
+    text-align: center;
+   }
+
+   .progress-container{
+    height:30px;
+   }
+}
+
+.complete{
+    background-color: lightgreen;
+}
+
+.pending{
+    background-color:rgb(243, 111, 111);
+}

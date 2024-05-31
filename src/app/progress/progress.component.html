@@ -1,0 +1,7 @@
+<div class="container pending">
+    <div class="progress-container" [ngClass]="ratio === 1 ? 'complete' : 'pending'">
+        <div [ngStyle]="{width:progress}">
+        </div>
+        <div class="progress-message">{{progress}} uploaded</div>
+    </div>
+</div>
