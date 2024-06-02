@@ -63,8 +63,11 @@ forkJoin(obsv$).subscribe((result)=>{
 
 }
 
+downloadExcel(){
+  this.filedownloadService.downloadExcel().subscribe()
+}
+
 download(){
-this.filedownloadService.setDownloadingProgress(0);
 this.filedownloadService.downloadJson().subscribe();
 }
 

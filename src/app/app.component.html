@@ -1,23 +1,28 @@
-<h4>Uploading Photos</h4>
+<!-- <h4>Uploading Photos</h4> -->
 
 <!--file upload-->
-<form [formGroup]="fileUpload">
+<!-- <form [formGroup]="fileUpload">
 <input type="file" multiple #photoselector accept="image/*" formControlName="imageSelector" 
 enctype="multipart/form-data" name="photos" (change)="preview($event)">
 <button type="button" [disabled]="fileUpload.invalid" (click)="upload($event)">Upload Photo</button>
-</form>
+</form> -->
 
 <!--Image preview-->
-<div class="imagePreview">
+<!-- <div class="imagePreview">
     <div *ngFor="let x of imageList">
         <img class="img-responsive img-circle" [src]="x.file" (click)="openBrowse($event)" alt="Update Photo">
         <app-progress [ratio]="x.ratio"></app-progress>
     </div>
-</div>
+</div> -->
 
 
-<h4>Downloading JSON</h4>
+<h4>Downloading</h4>
 
 <app-progress [ratio]="downloadprogressRatio$|async"></app-progress>
 
-<button (click)="download()">Download</button>
+<button (click)="download()">Download JSON</button>
+
+<!-- <button (click)="downloadExcel()">Download Excel</button> -->
+
+
+
